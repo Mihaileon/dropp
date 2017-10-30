@@ -1,0 +1,12 @@
+@font-face{
+	font-family: "Oswald";
+	src: url("../fonts/OswaldRegular/Oswald-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face{
+	font-family: "Oswald";
+	src: url("../fonts/OswaldBold/Oswald-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: bold;
+}
