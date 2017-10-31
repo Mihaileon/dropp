@@ -2,45 +2,122 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Проект Яндекс</title>
+    <title>DROPP</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
-    	<div class="header__logo header__column">
-    		<span class="logo">DR<span class="logo_letter">O</span>PP</span>
-    	</div>
-        <div class="header__column header__menu">
-    	   <nav class="menu">
+        <div class="main-conteiner">
+        	<h1 class="header__logo">DR<span class="header_symbol">O</span>PP</h1>
+    	    <nav class="menu header__menu">
                 <ul class="menu__list">
-                    <li class="menu__item menu__item_active">
+                    <li class="menu__list-item menu__list-item_active">
                         <a class="menu__link" href="#">HOME</a>
                     </li>
-                    <li class="menu__item menu__item_active">
+                    <li class="menu__list-item menu__list-item_active">
                         <a class="menu__link" href="#">SERVICES</a>
                     </li>
-                    <li class="menu__item menu__item_active">
+                    <li class="menu__list-item menu__list-item_active">
                         <a class="menu__link" href="#">PORTFOLIO</a>
                     </li>
-                    <li class="menu__item menu__item_active">
-                        <a class="menu__link menu__item_active" href="#">ABOUT</a>
+                    <li class="menu__list-item menu__list-item_active">
+                        <a class="menu__link menu__list-item_active" href="#">ABOUT</a>
                     </li>
-                    <li class="menu__item menu__item_active">
+                    <li class="menu__list-item menu__list-item_active">
                         <a class="menu__link" href="#">BLOG</a>
                     </li>
-                    <li class="menu__item menu__item_active">
+                    <li class="menu__list-item menu__list-item_active">
                         <a class="menu__link" href="#">CONTACT</a>
                     </li>
                 </ul>
             </nav>
-        </div>  
+        </div>
 	</header>
-        <div class="layout">
-        <div class="layout_content">
-            <span class="layout__text">COME,STAY FOR A COFFEE!</span>
-            <button class="button layout__button">HAVE A SEAT</button>
+    <div class="layout">
+        <div class="layout__correction">
+            <div class="main-conteiner">
+                <div class="home">
+                    <h2 class="home__slogan">COME,STAY FOR A COFFEE!</h2>
+                    <button class="home__button">HAVE A SEAT</button>
+                </div>
+            </div>
         </div>
     </div>
+    <div class="services">
+        <div class="main-conteiner">
+            <h3 class="title services__title">SERVICES</h3>
+        </div>
+        <div class="services__content">
+            <div class="main-conteiner">
+                <div class="services__widgets">
+                    <article class="widget services__widget services__branding">
+                            <div class="widget__header">
+                                <img class="widget__img" src="img/Pen_icon.png" alt="BRANDING icon">
+                                <h4 class="widget__title">BRANDING</h4>
+                            </div>
+                            <div class="widget__content">
+                                <p class="widget__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor 
+                                    ut labore et dolore magna aliqua. Ut enim 
+                                    ad minim veniam, quis nostrud
+                                </p>
+                            </div>
+                    </article>
+                    <article class="widget services__widget services__design">
+                            <div class="widget__header">
+                                <img class="widget__img" src="img/PC_icon.png" alt="DESIGN icon">
+                                <h4 class="widget__title">WEB DESIGN</h4>
+                            </div>
+                            <div class="widget__content">
+                                <p class="widget__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor 
+                                    ut labore et dolore magna aliqua. Ut enim 
+                                    ad minim veniam, quis nostrud           
+                                </p>
+                            </div>
+                    </article>
+                    <article class="widget services__widget services__marketing">
+                            <div class="widget__header">
+                                <img class="widget__img" src="img/Mic_icon.png" alt="MARKETING icon">
+                                <h4 class="widget__title">MARKETING</h4>
+                            </div>
+                            <div class="widget__content">
+                                <p class="widget__text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit, sed do eiusmod tempor 
+                                    ut labore et dolore magna aliqua. Ut enim 
+                                    ad minim veniam, quis nostrud
+                                </p>
+                            </div>
+                    </article>
+                </div>    
+            </div>
+        </div> 
+    </div>
+    <div class="portfolio">
+        <div class="main-conteiner">
+            <h3 class="title portfolio__title">PORTFOLIO</h3>
+            <div class="portfolio__outer-left">
+                <img class="portfolio__img-outer" src="img/Outer_port1.jpg" alt="DESIGN icon">
+                <img class="portfolio__img-outer" src="img/Outer_port2.jpg" alt="DESIGN icon">
+            </div>
+            <div class="portfolio__picture">
+                <img class="portfolio__img" src="img/port1.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port2.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port3.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port4.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port5.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port6.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port7.jpg" alt="DESIGN icon">
+                <img class="portfolio__img" src="img/port8.jpg" alt="DESIGN icon">
+            </div>    
+            <div class="portfolio__outer-right">
+                <img class="portfolio__img-outer" src="img/Outer_port3.jpg" alt="DESIGN icon">
+                <img class="portfolio__img-outer" src="img/Outer_port4.jpg" alt="DESIGN icon">
+            </div> 
+        </div>             
 </body>
 </html>        
