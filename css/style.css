@@ -5,24 +5,55 @@ body{
     font-size: 13px;
 }
 
-.header{
-	height: 109px;
+h1{
+	font-weight: normal;
+	font-size: 70px;
+	margin: 0;
+}
+
+h2{
+	font-size: 32px;
+	margin-top: 0;
+	margin-bottom: 34px;
+
+}
+
+h3{
+	font-size: 30px;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+p{
+	font-family: Arial;
+	margin: 0;
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
 }
 
 .main-conteiner{
     margin: 0 auto;
-    max-width: 1170px;
+    max-width: 1200px;
     min-width: 768px;
-    height: 100%;
-    position: relative;
+    padding: 0 15px;
+}
+
+.header:after{
+	content: "";
+	display: block;
+	clear: both;
 }
 
 .header__logo{
-	display: inline-block;
-	font-size: 70px;
-	margin: 0;
+	float: left;
 	color: #474444;
-	font-weight: normal;
 }
 
 .header_symbol{
@@ -31,11 +62,7 @@ body{
 
 .header__menu{	
 	float: right;
-}
-
-.menu__list{
-	padding: 0;
-	margin: 0;
+	vertical-align: top;
 }
 
 .menu__list-item{
@@ -43,12 +70,11 @@ body{
 	display: inline-block;	
 }
 
-.menu__list-item_active:hover{
+.menu__list-item:hover{
 	background-color: #fd5433;
 }
 
 .menu__link{
-	text-decoration: none;
 	display: inline-block;
 	padding: 42px 19px;
 	font-size: 17px;
@@ -60,140 +86,214 @@ body{
 	color : #fff;
 }
 
-.layout{
-	height: 800px;
-	background-image: url(../img/layout.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-    background-color: #565656; 
+.home{
+	position: relative;
 }
 
-.layout__correction{
-    background: rgba(81, 81, 81, 0.4);
-    height :100%;
+.home:before{
+	width: 100%;
+	height: 800px;
+	position: absolute;
+	content: "";
+	z-index: -1;
+	opacity: 0.7;
+	background-image: url(../img/layout.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;	
+    min-width: 798px;
+    background-position: center center;
+}
+
+.home:after{ 
+	min-width: 798px;
+	content: "";
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    background-color: #515151;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+}
+
+.home__content{
+	text-align: center;
+	padding: 196px 0 334px;
 }
 
 .home__slogan{
-	display: inline-block;
-	margin: 218px 0 0;
-	text-align: center;
-	font-size: 120px;
-	font-weight: normal;
-	color: #fff;
-	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+	display: block;
+    font-size: 120px;
+    font-weight: normal;
+    color: #fff;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
 }
 
-.home__button{
-	display: block;
-	margin: 72px auto 0;
+.home__link{
+	display: inline-block;
+    padding: 6px 60px;
+    margin: 33px auto 0;
     background-color: #fd5433;
-    width: 282px;
-    height: 59px;
     font-size: 32px;
     font-weight: bold;
     border: none;
     color: #fff;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
-    padding: 0;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.8), inset 0 2px 1px rgba(255, 126, 94, 1);
     text-shadow: 0 1px 0px rgba(0, 0, 0, 0.6);
 }
 
-.title{
-	font-size: 32px;
-	color: #fd5433;
-}
 .services{
-	margin-top: 36px;
+	margin-top: 34px;
+	min-width: 798px;
 }
+
+.title{
+    color: #fd5433;
+    text-align: center;
+}
+
 .services__title{
-	margin: 0 0 36px 0;
-	text-align: center;
+	margin: 0 0 36px;
 }
 
 .services__content{
-	border-top: 1px solid #828282;
-	border-bottom: 1px solid #828282;
-	height: 487px;
+   	border-bottom: 1px solid #828282;
+   	border-top: 1px solid #828282;
 }
 
-.services__widgets{
-	padding-top: 64px;
+.services__insides{
+	padding: 66px 0;
 }
 
 .services__widget{
-	position: absolute;
-	margin-right: 30px;
-	min-width: 280px;
+	width: 31%;
+	margin-right: 3%;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .services__widget:last-of-type{
-	margin: 0;
-}
-
-.services__branding{
-	width: 33%;
-}
-
-.services__design{
-	left: 33%;
-	width: 34%;
-}
-
-.services__marketing{
-	right: 0;
-	width: 33%;
-}
-
-.widget__header{
-	text-align: center;
-}
-
-.widget__title{
-	margin: 36px 0;
-	font-size: 30px;
-	color: #3d3c3c;
+  	margin-right: 0;
 }
 
 .widget__content{
-	font-family: Arial;
+	text-align: center;
+	padding: 0 30px;
 	font-size: 16px;
-	font-weight: normal;
-	text-align: center;
-	padding: 0 10%;
-	color: #121212;
 }
 
-.portfolio{
-	margin-top: 36px; 
+.widget__header{
+    text-align: center;
 }
 
-.portfolio__picture{
-    min-width: 1170px;
+.widget__title{
+	margin: 24px 0 27px;
+}
+  
+.about-us{
+	margin-top: 34px;
+	min-width: 798px;
 }
 
-.portfolio__title{
-	margin: 0 0 36px;
-	text-align: center;
+.about-us__content{
+	border-top: 1px solid #828282;
+	padding-top: 40px;
 }
 
-.portfolio__img{
-	float: left;
-	display: block;
+.about-us__picture{
+	max-width: 218px;
+	width: 18%;
+	display: inline-block;
+	margin-right: 8%;
 }
 
-.portfolio__outer-left{
-	position: absolute;
-	right: 1170px;
+.about-us__picture:last-of-type{
+	margin-right: 0;
 }
 
-.portfolio__outer-right{
-	position: absolute;
-	left: 1170px;
+.about-us__img{
+   width: 100%;
+   height: auto;
+	
 }
 
-.portfolio__img-outer{
-	display: block;
+.about-us__info{
+	background-color: #fd5433;
+    min-width: 798px;
+    margin-top: 66px;
+    padding-top: 66px;
+
+}
+.about-us__column{
+	display: inline-block;
+	width: 44%;
+	vertical-align: top;
+	margin-right: 8%;
+}
+
+.about-us__column:last-of-type{
+	margin-right: 0;
+}
+
+.about-us__name{
+	font-size: 22px;
+	color: #fff;
+	margin: 0;
+}
+
+.about-us__text{
+    color: #fff;
+    margin: 45px 0 48px;
+}
+
+.about-us__icon{
+	position: relative;
+	display: inline-block;
+	width: 26px;
+	height: 26px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin-right: 22px;
+}
+
+.about-us__icon:last-of-type{
+	margin-right: 0;
+}
+
+.about-us__facebook{
+	background-image: url(../img/facebook.svg);
+}
+
+.about-us__google{
+	background-image: url(../img/google.svg);
+}
+
+.about-us__vimeo{
+	background-image: url(../img/vimeo.svg);
+}
+
+.about-us__dribbble{
+	background-image: url(../img/dribbble4.svg);
+}
+
+.about-us__youtube{
+	background-image: url(../img/youtube4.svg);
+}
+
+.about-us__skills{
+	margin: 40px 0 0;
+}
+
+.about-us__skill-name{
+	font-family: Arial;
+	color: #fff;
+	font-size: 16px; 
+}
+
+.about-us__skill-item{
+	display: inline-block;
+	color: #fff;
 }
