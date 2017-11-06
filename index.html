@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <title>DROPP</title>
@@ -8,9 +8,9 @@
 </head>
 <body>
     <header class="header">
-        <div class="main-conteiner">
-        	<h1 class="header__logo">DR<span class="header_symbol">O</span>PP</h1>
-    	    <nav class="menu header__menu">
+        <div class="main-container clearfix">
+            <h1 class="header__logo">DR<span class="header_symbol">O</span>PP</h1>
+            <nav class="menu header__menu">
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a class="menu__link" href="#home">HOME</a>
@@ -25,32 +25,31 @@
                         <a class="menu__link " href="#about-us">ABOUT</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#">BLOG</a>
+                        <a class="menu__link" href="#latest-posts">BLOG</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#">CONTACT</a>
+                        <a class="menu__link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
         </div>
-	</header>
-    <div class="home" id="home">
-        <div class="main-conteiner">
+    </header>
+    <section class="home" id="home">
+        <div class="main-container">
             <div class="home__content">
                 <span class="home__slogan">COME,STAY FOR A COFFEE!</span>
                 <a class="home__link">HAVE  A  SEAT</a>
             </div>    
         </div>
-    </div>
+    </section>
     <section class="services" id="services">
         <h2 class="services__title title">SERVICES</h2>
         <div class="services__content">
-            <div class="main-conteiner">
+            <div class="main-container">
                 <div class="services__insides">
                     <article class="widget services__widget">
                         <div class="widget__header">
-                            <img class="widget__img" src="img/Pen_icon.png" alt="BRANDING icon">
-                            <h3 class="widget__title">BRANDING</h3>
+                            <h3 class="widget__title services_icon">BRANDING</h3>
                         </div>
                         <div class="widget__content">
                             <p class="widget__text">
@@ -61,10 +60,9 @@
                             </p>
                         </div>
                     </article>
-                    <article class="widget services__widget">
+                    <article class="widget services__widget services__widget-center">
                         <div class="widget__header">
-                            <img class="widget__img" src="img/PC_icon.png" alt="DESIGN icon">
-                            <h3 class="widget__title">WEB DESIGN</h3>
+                            <h3 class="widget__title web-design_icon">WEB DESIGN</h3>
                         </div>
                         <div class="widget__content">
                             <p class="widget__text">
@@ -77,8 +75,7 @@
                     </article>
                     <article class="widget services__widget">
                         <div class="widget__header">
-                            <img class="widget__img" src="img/Mic_icon.png" alt="MARKETING icon">
-                            <h3 class="widget__title">MARKETING</h3>
+                            <h3 class="widget__title marketing_icon">MARKETING</h3>
                         </div>
                         <div class="widget__content">
                             <p class="widget__text">
@@ -92,13 +89,44 @@
                 </div>
             </div>   
         </div>            
-    </section>  
+    </section>
+    <section class="portfolio" id="portfolio">
+            <h2 class="portfolio__title title">PORTFOLIO</h2>
+            <div class="portfolio__content">
+                <div class="main-container clearfix">
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port1.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port2.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port3.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port4.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port5.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port6.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port7.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port8.jpg" alt="example's image">
+                </a>
+            </div>
+            </div>
+    </section>
     <section class="about-us" id="about-us">
         <div class="main-conteiner">
             <h2 class="about-us__title title">ABOUT US</h2>
         </div>
         <div class="about-us__content">
-            <div class="main-conteiner">
+            <div class="main-container">
                 <div class="about-us__foto">
                     <div class="about-us__picture">
                         <img class="about-us__img" src="img/member1.png" alt="MEMBER">
@@ -115,69 +143,183 @@
                 </div>    
             </div>
             <div class="about-us__info">
-                <div class="main-conteiner">
-                    <div class="about-us__column">
-                        <h4 class="about-us__name">John Smith - Lead Graphic Artist</h4>
-                        <div class="about-us__text">
+                <div class="main-container">
+                    <div class="about-us__columns">
+                        <div class="about-us__column">
+                            <h4 class="about-us__name">John Smith - Lead Graphic Artist</h4>
+                            <div class="about-us__text">
+                                <p> 
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
+                                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
+                                    commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
+                                    velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
+                                    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
+                                    laborum.
+                                </p>
+                            </div>      
+                        </div>
+                        <div class="about-us__column">
+                            <h4 class="about-us__name">Skills</h4>
+                            <div class="about-us__skills">
+                                <div class="about-us__skill">
+                                    <span class="about-us__skill-name">PHOTOSHOP</span>
+                                    <progress class="about-us__skill-progress" value="100" max="100"></progress>
+                                    <span class="about-us__skill-value">100%</span>    
+                                </div>
+                                <div class="about-us__skill">
+                                    <span class="about-us__skill-name">ILLUSTRATOR</span>
+                                    <progress class="about-us__skill-progress" value="98" max="100"></progress>
+                                    <span class="about-us__skill-value">98%</span> 
+                                </div>
+                                <div class="about-us__skill">
+                                    <span class="about-us__skill-name">WORDPRESS</span>
+                                    <progress class="about-us__skill-progress" value="67" max="100"></progress>
+                                    <span class="about-us__skill-value">67%</span>  
+                                </div>
+                                <div class="about-us__skill">
+                                    <span class="about-us__skill-name">JOOMLA</span>
+                                    <progress class="about-us__skill-progress" value="70" max="100"></progress>
+                                    <span class="about-us__skill-value">70%</span>    
+                                </div>
+                                <div class="about-us__skill">
+                                    <span class="about-us__skill-name">JQUERY</span>
+                                    <progress class="about-us__skill-progress" value="58" max="100"></progress>
+                                    <span class="about-us__skill-value">58%</span>  
+                                </div>
+                            </div> 
+                        </div>
+                    </div>   
+                    <div class="about-us__links">
+                        <a class="about-us__link" href="#">
+                            <img class="about-us__icon" src="img/facebook.svg" alt="facebook">
+                        </a>
+                        <a class="about-us__link" href="#">
+                            <img class="about-us__icon" src="img/google.svg" alt="google+">
+                        </a>
+                        <a class="about-us__link" href="#">
+                            <img class="about-us__icon" src="img/vimeo.svg" alt="vimeo">
+                        </a>
+                        <a class="about-us__link" href="#">
+                            <img class="about-us__icon" src="img/dribbble4.svg" alt="dribbble 4">
+                        </a>
+                        <a class="about-us__link" href="#">
+                            <img class="about-us__icon" src="img/youtube4.svg" alt="youtube">
+                        </a>
+                    </div>       
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="latest-posts" id="latest-posts">
+        <div class="main-container">
+            <h2 class="latest-posts__titile title">LATEST-POSTS</h2>
+        </div>
+        <div class="latest-posts__content">    
+            <div class="main-container">
+                <article class="post latest-posts__post">
+                    <div class="post__picture post__column">
+                        <img class="post__img" src="img/post1.jpg" alt="facebook"">
+                    </div>
+                    <div class="post__column">    
+                        <div class="post__header">
+                            <h5 class="post__titile">SUMMER ADVENTURES...</h5>
+                            <time class="post__time">POSTED: DEC 14 2013</time>
+                        </div> 
+                        <div class="post__content">
                             <p> 
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate 
-                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est 
-                                laborum.
+                                We can always be on our best or
+                                worst behavior,depending on our
+                                surroundings and the energy the
+                                elements give us.Summertime is
+                                usually the season to unwind(...)
                             </p>
                         </div>
-                        <a class="about-us__icon about-us__facebook"></a>
-                        <a class="about-us__icon about-us__google"></a>  
-                        <a class="about-us__icon about-us__vimeo"></a>  
-                        <a class="about-us__icon about-us__dribbble"></a>  
-                        <a class="about-us__icon about-us__youtube"></a>          
+                    </div>    
+                </article>
+                <article class="post latest-posts__post">
+                    <div class="post__picture post__column">
+                        <img class="post__img" src="img/post2.jpg" alt="facebook"">
                     </div>
-                    <div class="about-us__column">
-                        <h4 class="about-us__name">Skills</h4>
-                        <div class="about-us__skills">
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">PHOTOSHOP</span>
-                                <div class="about-us__skill-item">
-                                    <progress class="about-us__skill-progress" value="100" max="100"></progress>
-                                    <span class="about-us__skill-value">100%</span>
-                                </div>    
-                            </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">ILLUSTRATOR</span>
-                                <div class="about-us__skill-item">
-                                    <progress class="about-us__skill-progress" value="98" max="100"></progress>
-                                    <span class="about-us__skill-value">98%</span>
-                                </div>    
-                            </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">WORDPRESS</span>
-                                <div class="about-us__skill-item">
-                                    <progress class="about-us__skill-progress" value="67" max="100"></progress>
-                                    <span class="about-us__skill-value">67%</span>
-                                </div>    
-                            </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JOOMLA</span>
-                                <div class="about-us__skill-item">
-                                    <progress class="about-us__skill-progress" value="70" max="100"></progress>
-                                    <span class="about-us__skill-value">70%</span>
-                                </div>    
-                            </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JQUERY</span>
-                                <div class="about-us__skill-item">
-                                    <progress class="about-us__skill-progress" value="58" max="100"></progress>
-                                    <span class="about-us__skill-value">58%</span>
-                                </div>    
-                            </div>
-                        </div>    
+                    <div class="post__column">    
+                        <div class="post__header">
+                            <h5 class="post__titile">HEROES: DECAT O REVI...</h5>
+                            <time class="post__time">POSTED: DEC 14 2013</time>
+                        </div> 
+                        <div class="post__content">
+                            <p> 
+                                This issue of “Decat o Revista” was
+                                about the omnipresent story of the
+                                “hero” - a story in wich we all find
+                                ourselves fulfilling this archtypal 
+                                role in one way or another (...)
+                            </p>
+                        </div>
+                    </div>    
+                </article>
+                <article class="post latest-posts__post">
+                    <div class="post__picture post__column">
+                        <img class="post__img" src="img/post3.jpg" alt="facebook"">
                     </div>
-                </div>
-            </div> 
+                    <div class="post__column">    
+                        <div class="post__header">
+                            <h5 class="post__titile">ROMANIAN FOLKLORE</h5>
+                            <time class="post__time">POSTED: DEC 14 2013</time>
+                        </div> 
+                        <div class="post__content">
+                            <p> 
+                                An illustration for a gallery expo at 
+                                Imbold Gallery. The central theme 
+                                was romanian folkore and my 
+                                submission is inspired by 
+                                ”the day of the thief”
+                            </p>
+                        </div>
+                    </div>    
+                </article>
+                <article class="post latest-posts__post">
+                    <div class="post__picture post__column">
+                        <img class="post__img" src="img/post4.jpg" alt="facebook"">
+                    </div>
+                    <div class="post__column">    
+                        <div class="post__header">
+                            <h5 class="post__titile">WHAT’S ON DUBAI AND...</h5>
+                            <time class="post__time">POSTED: DEC 14 2013</time>
+                        </div> 
+                        <div class="post__content">
+                            <p> 
+                                Let’s take a look at some brilliant 
+                                cover illustrations created by Ioana
+                                Sopov for “What’s On” magazine.
+                                The attention to detail and amazing
+                                color combinations really demo(...)
+                            </p>
+                        </div>
+                    </div>    
+                </article>        
+            </div>
+        </div>                     
+    </section>
+    <section class="contact-us" id="contact">
+        <div class="main-container">
+            <h2 class="section__title title">CONTACT US</h2>
+        </div>    
+        <div class="contact-us__container">
+            <div class="main-container">
+                <form class="contact-us__form form" action="#" method="post">
+                    <label class="form__label">
+                        <input class="form__field" placeholder="Your name here" name="name" type="text" >
+                    </label>
+                    <label class="form__label">
+                        <input class="form__field" placeholder="Email address here" name="email" type="email">             
+                    </label>
+                    <label class="form__label form__textarea">
+                        <textarea class="form__field form__textarea-field"  rows="10"  name="textarea" placeholder="Your message here"></textarea>
+                    </label>
+                    <button class="form__button" type="submit">SEND MESSAGE NOW</button>
+                </form>
+            </div>
         </div>
     </section>            
-</body>
+</body>         
 </html>        
