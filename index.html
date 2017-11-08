@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="main-container clearfix">
+        <div class="main-container flexbox">
             <h1 class="header__logo">DR<span class="header_symbol">O</span>PP</h1>
             <nav class="menu header__menu">
                 <ul class="menu__list">
@@ -38,7 +38,7 @@
         <div class="main-container">
             <div class="home__content">
                 <span class="home__slogan">COME,STAY FOR A COFFEE!</span>
-                <a class="home__link">HAVE  A  SEAT</a>
+                <a class="home__link button">HAVE  A  SEAT</a>
             </div>    
         </div>
     </section>
@@ -47,12 +47,12 @@
         <div class="services__content">
             <div class="main-container">
                 <div class="services__insides">
-                    <article class="widget services__widget">
-                        <div class="widget__header">
-                            <h3 class="widget__title services_icon">BRANDING</h3>
+                    <article class="service services__column">
+                        <div class="service__header">
+                            <h3 class="service__title service__branding-icon">BRANDING</h3>
                         </div>
-                        <div class="widget__content">
-                            <p class="widget__text">
+                        <div class="service__content">
+                            <p class="service__text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod tempor 
                                 ut labore et dolore magna aliqua. Ut enim 
@@ -60,12 +60,12 @@
                             </p>
                         </div>
                     </article>
-                    <article class="widget services__widget services__widget-center">
-                        <div class="widget__header">
-                            <h3 class="widget__title web-design_icon">WEB DESIGN</h3>
+                    <article class="service services__column">
+                        <div class="service__header">
+                            <h3 class="service__title service__web-design-icon">WEB DESIGN</h3>
                         </div>
-                        <div class="widget__content">
-                            <p class="widget__text">
+                        <div class="service__content">
+                            <p class="service__text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod tempor 
                                 ut labore et dolore magna aliqua. Ut enim 
@@ -73,12 +73,12 @@
                             </p>
                         </div>
                     </article>
-                    <article class="widget services__widget">
-                        <div class="widget__header">
-                            <h3 class="widget__title marketing_icon">MARKETING</h3>
+                    <article class="service services__column">
+                        <div class="service__header">
+                            <h3 class="service__title  service__marketing-icon">MARKETING</h3>
                         </div>
-                        <div class="widget__content">
-                            <p class="widget__text">
+                        <div class="service__content">
+                            <p class="service__text">
                                 Lorem ipsum dolor sit amet, consectetur
                                 adipisicing elit, sed do eiusmod tempor 
                                 ut labore et dolore magna aliqua. Ut enim 
@@ -93,7 +93,9 @@
     <section class="portfolio" id="portfolio">
             <h2 class="portfolio__title title">PORTFOLIO</h2>
             <div class="portfolio__content">
-                <div class="main-container clearfix">
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port3.jpg" alt="example's image">
+                </a>
                 <a class="portfolio__link" href="#0">
                     <img class="portfolio__image" src="img/port1.jpg" alt="example's image">
                 </a>
@@ -107,6 +109,12 @@
                     <img class="portfolio__image" src="img/port4.jpg" alt="example's image">
                 </a>
                 <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port2.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port7.jpg" alt="example's image">
+                </a>
+                <a class="portfolio__link" href="#0">   
                     <img class="portfolio__image" src="img/port5.jpg" alt="example's image">
                 </a>
                 <a class="portfolio__link" href="#0">
@@ -118,7 +126,9 @@
                 <a class="portfolio__link" href="#0">
                     <img class="portfolio__image" src="img/port8.jpg" alt="example's image">
                 </a>
-            </div>
+                <a class="portfolio__link" href="#0">
+                    <img class="portfolio__image" src="img/port6.jpg" alt="example's image">
+                </a>
             </div>
     </section>
     <section class="about-us" id="about-us">
@@ -126,25 +136,22 @@
             <h2 class="about-us__title title">ABOUT US</h2>
         </div>
         <div class="about-us__content">
-            <div class="main-container">
-                <div class="about-us__foto">
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member1.png" alt="MEMBER">
-                    </div>
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member2.png" alt="MEMBER">
-                    </div>
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member3.png" alt="MEMBER">
-                    </div>
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member4.png" alt="MEMBER">
-                    </div>
-                </div>    
+            <div class="main-container about-us__foto flexbox">
+                <div class="about-us__picture">
+                    <img class="about-us__img" src="img/member1.png" alt="MEMBER">
+                </div>
+                <div class="about-us__picture about-us__picture_active">
+                    <img class="about-us__img" src="img/member2.png" alt="MEMBER">
+                </div>
+                <div class="about-us__picture">
+                    <img class="about-us__img" src="img/member3.png" alt="MEMBER">
+                </div>
+                <div class="about-us__picture">
+                    <img class="about-us__img" src="img/member4.png" alt="MEMBER">
+                </div>   
             </div>
             <div class="about-us__info">
-                <div class="main-container">
-                    <div class="about-us__columns">
+                <div class="main-container flexbox">
                         <div class="about-us__column">
                             <h4 class="about-us__name">John Smith - Lead Graphic Artist</h4>
                             <div class="about-us__text">
@@ -188,25 +195,8 @@
                                     <span class="about-us__skill-value">58%</span>  
                                 </div>
                             </div> 
-                        </div>
-                    </div>   
-                    <div class="about-us__links">
-                        <a class="about-us__link" href="#">
-                            <img class="about-us__icon" src="img/facebook.svg" alt="facebook">
-                        </a>
-                        <a class="about-us__link" href="#">
-                            <img class="about-us__icon" src="img/google.svg" alt="google+">
-                        </a>
-                        <a class="about-us__link" href="#">
-                            <img class="about-us__icon" src="img/vimeo.svg" alt="vimeo">
-                        </a>
-                        <a class="about-us__link" href="#">
-                            <img class="about-us__icon" src="img/dribbble4.svg" alt="dribbble 4">
-                        </a>
-                        <a class="about-us__link" href="#">
-                            <img class="about-us__icon" src="img/youtube4.svg" alt="youtube">
-                        </a>
-                    </div>       
+                        </div>  
+                    </div>         
                 </div>
             </div>
         </div>
@@ -216,7 +206,7 @@
             <h2 class="latest-posts__titile title">LATEST-POSTS</h2>
         </div>
         <div class="latest-posts__content">    
-            <div class="main-container">
+            <div class="main-container flexbox">
                 <article class="post latest-posts__post">
                     <div class="post__picture post__column">
                         <img class="post__img" src="img/post1.jpg" alt="facebook"">
@@ -316,7 +306,7 @@
                     <label class="form__label form__textarea">
                         <textarea class="form__field form__textarea-field"  rows="10"  name="textarea" placeholder="Your message here"></textarea>
                     </label>
-                    <button class="form__button" type="submit">SEND MESSAGE NOW</button>
+                    <button class="form__button button" type="submit">SEND MESSAGE NOW</button>
                 </form>
             </div>
         </div>
