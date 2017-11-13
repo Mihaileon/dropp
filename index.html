@@ -8,27 +8,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="main-container header__flexbox">
-            <h1 class="header__logo">DR<span class="header_symbol">O</span>PP</h1>
+        <div class="main-container header__container">
+            <h1 class="header__logo title">DR<span class="header_symbol">O</span>PP</h1>
             <nav class="menu header__menu">
-                <ul class="menu__list">
+                <ul class="list menu__list">
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#home">HOME</a>
+                        <a class="link menu__link" href="#home">HOME</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#services">SERVICES</a>
+                        <a class="link menu__link" href="#services">SERVICES</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#portfolio">PORTFOLIO</a>
+                        <a class="link menu__link" href="#portfolio">PORTFOLIO</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link " href="#about-us">ABOUT</a>
+                        <a class="link menu__link" href="#about-us">ABOUT</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#latest-posts">BLOG</a>
+                        <a class="link menu__link" href="#latest-posts">BLOG</a>
                     </li>
                     <li class="menu__list-item">
-                        <a class="menu__link" href="#contact">CONTACT</a>
+                        <a class="link menu__link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -43,11 +43,11 @@
         </div>
     </section>
     <section class="services" id="services">
-        <h2 class="services__title title main-container">SERVICES</h2>
-        <div class="services__content">
-            <div class="main-container services__insides flexbox">
-                <article class="service services__column">
-                    <h3 class="service__title service__branding-icon title">BRANDING</h3>
+        <h2 class="services__title title">SERVICES</h2>
+        <div class="services__container">
+            <div class="main-container services__content">
+                <article class="service services__column service__branding-icon">
+                    <h3 class="service__title title">BRANDING</h3>
                     <div class="service__content">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur
@@ -57,8 +57,8 @@
                         </p>
                     </div>
                 </article>
-                <article class="service services__column">
-                    <h3 class="service__title service__web-design-icon title">WEB DESIGN</h3>
+                <article class="service services__column service__web-design-icon">
+                    <h3 class="service__title title">WEB DESIGN</h3>
                     <div class="service__content">
                         <p >
                             Lorem ipsum dolor sit amet, consectetur
@@ -68,8 +68,8 @@
                         </p>
                     </div>
                 </article>
-                <article class="service services__column">
-                    <h3 class="service__title  service__marketing-icon title">MARKETING</h3>
+                <article class="service services__column service__marketing-icon">
+                    <h3 class="service__title title">MARKETING</h3>
                     <div class="service__content">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur
@@ -83,8 +83,8 @@
         </div>            
     </section>
     <section class="portfolio" id="portfolio">
-        <h2 class="portfolio__title title main-container">PORTFOLIO</h2>
-        <div class="portfolio__content">
+        <h2 class="portfolio__title title">PORTFOLIO</h2>
+        <div class="portfolio__pictures">
             <a class="portfolio__link" href="#0">
                 <img class="portfolio__image" src="img/port3.jpg" alt="progect">
             </a>
@@ -124,26 +124,26 @@
         </div>
     </section>
     <section class="about-us" id="about-us">
-        <h2 class="about-us__title title main-container">ABOUT US</h2>
+        <h2 class="about-us__title title">ABOUT US</h2>
             <div class="about-us__foto">
-                <div class="main-container flexbox">
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member1.png" alt="MEMBER">
-                    </div>
-                    <div class="about-us__picture about-us__picture_active">
-                        <img class="about-us__img" src="img/member2.png" alt="MEMBER">
-                    </div>
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member3.png" alt="MEMBER">
-                    </div>
-                    <div class="about-us__picture">
-                        <img class="about-us__img" src="img/member4.png" alt="MEMBER">
-                    </div>   
+                <div class="main-container about-us__pictures">
+                    <a class="about-us__picture" href="#">
+                        <img class="about-us__img" src="img/member1.png" alt="Mishel Busced">
+                    </a>
+                    <a class="about-us__picture about-us__picture_active" href="#">
+                        <img class="about-us__img" src="img/member2.png" alt="John Smith">
+                    </a>
+                    <a class="about-us__picture" href="#">
+                        <img class="about-us__img" src="img/member3.png" alt="Nina Astahova">
+                    </a>
+                    <a class="about-us__picture" href="#">
+                        <img class="about-us__img" src="img/member4.png" alt="Alena Stepanova">
+                    </a>   
                 </div>
             </div>
-            <div class="about-us__info">
-                <div class="main-container flexbox">
-                    <div class="about-us__column about-us__descriprion">
+            <div class="about-us__info-container">
+                <div class="main-container about-us__information">
+                    <div class="about-us__descriprion">
                         <h3 class="about-us__name title">John Smith - Lead Graphic Artist</h3>
                         <div class="about-us__text">
                             <p> 
@@ -157,7 +157,7 @@
                             </p>
                         </div>      
                     </div>
-                    <div class="about-us__column about-us__addition">
+                    <div class="about-us__addition">
                         <h4 class="about-us__skills-title title">Skills</h4>
                         <div class="about-us__skills">
                             <div class="about-us__skill">
@@ -191,9 +191,9 @@
             </div>            
     </section>
     <section class="latest-posts" id="latest-posts">
-        <h2 class="latest-posts__title title main-container">LATEST-POSTS</h2>
+        <h2 class="latest-posts__title title">LATEST-POSTS</h2>
         <div class="latest-posts__content">    
-            <div class="main-container flexbox">
+            <div class="main-container latest-posts__posts">
                 <article class="post latest-posts__post">
                     <div class="post__picture post__column">
                         <img class="post__img" src="img/post1.jpg" alt="facebook"">
@@ -278,7 +278,7 @@
         </div>                     
     </section>
     <section class="contact-us" id="contact">
-        <h2 class="main-container contact-us__title title">CONTACT US</h2>
+        <h2 class="contact-us__title title">CONTACT US</h2>
         <div class="contact-us__container">
             <div class="main-container">
                 <form class="contact-us__form form" action="#" method="post">
@@ -296,5 +296,5 @@
             </div>
         </div>
     </section>
-    
-                      
+</body>
+</html>           
