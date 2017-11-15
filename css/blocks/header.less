@@ -1,0 +1,34 @@
+.header{
+	min-width: 798px;
+}
+
+.header__container{
+	display: flex;
+	justify-content: space-between;
+}
+
+.header__logo{
+	color: #474444;
+	font-size: 70px;
+	font-weight: normal;
+}
+
+.header_symbol{
+	color: #fd5433;
+}
+
+@keyframes slidein {
+  from {
+    padding-right: 35%; 
+  }
+
+  to {
+    padding-right: 0%; 
+  }
+}
+
+.header__menu{	
+	max-width: 900px;
+	animation-duration: 1s;
+	animation-name: slidein;
+}

@@ -1,0 +1,142 @@
+.about-us{
+	min-width: 798px;
+	padding-top: 26px;
+}
+
+.about-us__title{
+	margin-bottom: 26px;
+	color: @maincolor;
+    text-align: center;
+}
+
+.about-us__foto{
+	padding-top: 65px;
+	padding-bottom: 60px;
+	border-top: 1px solid #828282;
+}
+
+.about-us__pictures{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.about-us__picture{
+	position: relative;
+	flex-basis: 23.1%;
+	display: flex;
+	justify-content: center;
+	margin-right: 2.5%;
+	align-items: center; 
+}
+
+.about-us__picture:last-of-type{
+	margin-right: 0;
+}
+
+.about-us__picture:nth-child(4n+4){
+	margin-right: 0;
+}
+
+.about-us__picture:nth-child(n+5){
+	margin-top: 30px;
+}
+
+.about-us__picture_active:after{
+	content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -112px;
+    transform: translateX(-50%);
+    border: 22px solid transparent;
+    border-top: 33px solid @whitecolor;
+}
+
+.about-us__img{
+   	max-width: 100%;
+   	display: block;
+}
+
+.about-us__info-container{
+	background-color: @maincolor;
+    padding-top: 62px;
+    padding-bottom: 44px;
+}
+.about-us__information{
+	display: flex;
+}
+
+.about-us__descriprion{
+	width: 48.9%;
+	max-width: 573px;
+	margin-right: 2.2%;
+}
+
+.about-us__addition{
+	width: 48.9%;
+	max-width: 573px;
+}
+
+.about-us__name{
+	color: @whitecolor;
+}
+
+.about-us__text{
+	padding-right: 7%;
+    color: @whitecolor;
+    margin-top: 45px;
+}
+
+.about-us__skills-title{
+	color: @whitecolor;
+}
+
+.about-us__skill{
+	color: @whitecolor;
+}
+
+.about-us__skill-progress{
+	background-color: @whitecolor;
+	width: 49%;
+	display: inline-block;
+	margin-left: 10%;
+	height: 10px;
+	vertical-align: baseline;
+}
+
+.about-us__skill-progress[value]::-webkit-progress-bar{
+	background-color: @maincolor;
+}
+
+.about-us__skill-progress[value]::-webkit-progress-value{
+	background-color: @whitecolor;
+}
+
+.about-us__skills{
+	margin-top: 46px;
+	font-family: Arial;
+	font-size: 16px;
+}
+
+.about-us__skill{
+	margin-bottom: 12px;
+}
+
+.about-us__skill:last-child{
+	margin-bottom: 0;
+}
+
+.about-us__skill-name{
+	display: inline-block;
+	width: 30%;
+	letter-spacing: 0.3px;
+}
+
+.about-us__skill-item{
+	display: inline-block;
+	margin-left: 10.5%;
+}
+
+.about-us__skill-value{
+	display: inline-block;
+	margin-left: 1.5%;
+}
