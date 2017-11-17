@@ -1,47 +1,35 @@
-.about-us{
-	min-width: 798px;
-	padding-top: 26px;
-}
-
 .about-us__title{
-	margin-bottom: 26px;
 	color: @maincolor;
     text-align: center;
 }
 
-.about-us__foto{
-	padding-top: 65px;
-	padding-bottom: 60px;
-	border-top: 1px solid #828282;
-}
-
-.about-us__pictures{
+.about-us__photos{
+	margin-top: 65px;
 	display: flex;
 	flex-wrap: wrap;
 }
 
-.about-us__picture{
-	position: relative;
+.about-us__photo{
+	cursor: pointer;
 	flex-basis: 23.1%;
 	display: flex;
 	justify-content: center;
 	margin-right: 2.5%;
-	align-items: center; 
 }
 
-.about-us__picture:last-of-type{
+.about-us__photo:last-of-type{
 	margin-right: 0;
 }
 
-.about-us__picture:nth-child(4n+4){
+.about-us__photo:nth-child(4n+4){
 	margin-right: 0;
 }
 
-.about-us__picture:nth-child(n+5){
+.about-us__photo:nth-child(n+5){
 	margin-top: 30px;
 }
 
-.about-us__picture_active:after{
+.about-us__photo_active:after{
 	content: "";
     position: absolute;
     left: 50%;
@@ -58,12 +46,31 @@
 
 .about-us__info-container{
 	background-color: @maincolor;
+	margin-top: 60px;
     padding-top: 62px;
     padding-bottom: 44px;
 }
-.about-us__information{
-	display: flex;
+
+.about-us__radio{
+	display:none;
 }
+.about-us__inner{
+	display:none
+}
+.about-us__radio:checked + .about-us__inner{
+  display: flex;
+  animation-name: shift-about;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease;
+}
+
+@keyframes shift-about{
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } 
+  }
 
 .about-us__descriprion{
 	width: 48.9%;

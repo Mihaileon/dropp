@@ -24,9 +24,18 @@
 
 .post__time{
 	font-family: oswald;
+	position:relative;
 	font-size: 15px;
 	font-weight: bold;
 	color: #686868;
+}
+.post__time:after{
+    content: "";
+    position: absolute;
+    border-bottom: 5px solid @maincolor;
+    left: 0;
+    bottom: -15px;
+    width: 60%;
 }
 
 .post__content{
