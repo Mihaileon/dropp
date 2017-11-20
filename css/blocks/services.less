@@ -15,17 +15,29 @@
 }
 
 .services__column{
+	padding-top: 200px;
 	text-align: center;
-	width: 31.7%;
-	margin-right: 2.4%;
 	background-repeat: no-repeat;
 	background-position-x: center;
+	margin-right: 2.4%;
+	width: 31.7%;
 }
-
 .services__column:nth-child(3n+3){
    margin-right: 0;
 }
 
 .services__column:nth-child(n+4){
    margin-top: 64px;
+}
+
+@media screen and (max-width: 699px){
+	.services__column{
+	display: block;
+	margin-top: 30px;
+	width: 100%;
+	margin-right: 0;
+	}
+	.services__column:first-of-type{
+		margin-top: 0;
+	}
 }

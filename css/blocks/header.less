@@ -1,5 +1,8 @@
 .header{
-	min-width: 798px;
+	position: fixed;
+	background-color: #fff;
+	width: 100%;
+	z-index: 1;
 }
 
 .header__container{
@@ -9,7 +12,7 @@
 
 .header__logo{
 	color: #474444;
-	font-size: 70px;
+	font-size: 7rem;
 	font-weight: normal;
 }
 
@@ -17,18 +20,6 @@
 	color: #fd5433;
 }
 
-@keyframes slidein {
-  from {
-    padding-right: 35%; 
-  }
-
-  to {
-    padding-right: 0%; 
-  }
-}
-
 .header__menu{	
 	max-width: 900px;
-	animation-duration: 1s;
-	animation-name: slidein;
 }

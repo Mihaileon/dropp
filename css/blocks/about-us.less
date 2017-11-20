@@ -15,6 +15,7 @@
 	display: flex;
 	justify-content: center;
 	margin-right: 2.5%;
+	align-items: center;
 }
 
 .about-us__photo:last-of-type{
@@ -74,13 +75,13 @@
 
 .about-us__descriprion{
 	width: 48.9%;
-	max-width: 573px;
 	margin-right: 2.2%;
+	box-sizing: border-box;
+	padding-right: 7%;
 }
 
 .about-us__addition{
 	width: 48.9%;
-	max-width: 573px;
 }
 
 .about-us__name{
@@ -88,62 +89,24 @@
 }
 
 .about-us__text{
-	padding-right: 7%;
     color: @whitecolor;
     margin-top: 45px;
 }
 
-.about-us__skills-title{
-	color: @whitecolor;
+@media screen and (max-width: 699px){
+	.about-us__radio:checked + .about-us__inner{
+		display: block;
+	}
+
+	.about-us__addition{
+		width: 100%;
+		margin-top: 30px;
+		margin-right: 0;
 }
 
-.about-us__skill{
-	color: @whitecolor;
-}
-
-.about-us__skill-progress{
-	background-color: @whitecolor;
-	width: 49%;
-	display: inline-block;
-	margin-left: 10%;
-	height: 10px;
-	vertical-align: baseline;
-}
-
-.about-us__skill-progress[value]::-webkit-progress-bar{
-	background-color: @maincolor;
-}
-
-.about-us__skill-progress[value]::-webkit-progress-value{
-	background-color: @whitecolor;
-}
-
-.about-us__skills{
-	margin-top: 46px;
-	font-family: Arial;
-	font-size: 16px;
-}
-
-.about-us__skill{
-	margin-bottom: 12px;
-}
-
-.about-us__skill:last-child{
-	margin-bottom: 0;
-}
-
-.about-us__skill-name{
-	display: inline-block;
-	width: 30%;
-	letter-spacing: 0.3px;
-}
-
-.about-us__skill-item{
-	display: inline-block;
-	margin-left: 10.5%;
-}
-
-.about-us__skill-value{
-	display: inline-block;
-	margin-left: 1.5%;
+	.about-us__descriprion{
+		width: 100%;
+		margin-right: 0;
+		padding-right: 0;
+	}
 }

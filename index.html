@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>DROPP</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
@@ -11,7 +12,9 @@
         <div class="main-container header__container">
             <h1 class="header__logo title">DR<span class="header_symbol">O</span>PP</h1>
             <nav class="menu header__menu">
-                <ul class="list menu__list">
+                <input id="menu__checkbox" type="checkbox" name="menu" class="menu__hamburger">
+                <label class="menu__label" for="menu__checkbox">Menu</label>
+                <ul class="menu__list">
                     <li class="menu__list-item">
                         <a class="link menu__link" href="#home">HOME</a>
                     </li>
@@ -36,7 +39,7 @@
     </header>
     <section class="home" id="home">
         <div class="home__content main-container">
-            <span class="home__slogan">COME,STAY FOR A COFFEE!</span>
+            <h2 class="home__slogan title title_xl">COME,STAY FOR A COFFEE!</h2>
             <a class="home__link button">HAVE  A  SEAT</a>
         </div>
     </section>
@@ -159,33 +162,33 @@
                             </p>
                         </div>      
                     </div>
-                    <div class="about-us__addition">
-                        <h4 class="about-us__skills-title title_xs title">Skills</h4>
-                        <div class="about-us__skills">
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">PHOTOSHOP</span>
-                                <progress class="about-us__skill-progress" value="100" max="100"></progress>
-                                <span class="about-us__skill-value">100%</span>    
+                    <div class="about-us__addition skills">
+                        <h4 class="skills__title title_xs title">Skills</h4>
+                        <div class="skills__items">
+                            <div class="skill__item">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__progress" value="100" max="100"></progress>
+                                <span class="skill__value">100%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">ILLUSTRATOR</span>
-                                <progress class="about-us__skill-progress" value="98" max="100"></progress>
-                                <span class="about-us__skill-value">98%</span> 
+                            <div class="skill__item">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__progress" value="98" max="100"></progress>
+                                <span class="skill__value">98%</span> 
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">WORDPRESS</span>
-                                <progress class="about-us__skill-progress" value="67" max="100"></progress>
-                                <span class="about-us__skill-value">67%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__progress" value="67" max="100"></progress>
+                                <span class="skill__value">67%</span>  
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JOOMLA</span>
-                                <progress class="about-us__skill-progress" value="70" max="100"></progress>
-                                <span class="about-us__skill-value">70%</span>    
+                            <div class="skill__item">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__progress" value="70" max="100"></progress>
+                                <span class="skill__value">70%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JQUERY</span>
-                                <progress class="about-us__skill-progress" value="58" max="100"></progress>
-                                <span class="about-us__skill-value">58%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__progress" value="58" max="100"></progress>
+                                <span class="skill__value">58%</span>  
                             </div>
                         </div> 
                     </div>
@@ -208,33 +211,33 @@
                             </p>
                         </div>      
                     </div>
-                    <div class="about-us__addition">
-                        <h4 class="about-us__skills-title title_xs title">Skills</h4>
-                        <div class="about-us__skills">
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">PHOTOSHOP</span>
-                                <progress class="about-us__skill-progress" value="100" max="100"></progress>
-                                <span class="about-us__skill-value">100%</span>    
+                    <div class="about-us__addition skills">
+                        <h4 class="skills__title title_xs title">Skills</h4>
+                        <div class="skills__items">
+                            <div class="skill__item">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__progress" value="100" max="100"></progress>
+                                <span class="skill__value">100%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">ILLUSTRATOR</span>
-                                <progress class="about-us__skill-progress" value="98" max="100"></progress>
-                                <span class="about-us__skill-value">98%</span> 
+                            <div class="skill__item">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__progress" value="98" max="100"></progress>
+                                <span class="skill__value">98%</span> 
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">WORDPRESS</span>
-                                <progress class="about-us__skill-progress" value="67" max="100"></progress>
-                                <span class="about-us__skill-value">67%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__progress" value="67" max="100"></progress>
+                                <span class="skill__value">67%</span>  
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JOOMLA</span>
-                                <progress class="about-us__skill-progress" value="70" max="100"></progress>
-                                <span class="about-us__skill-value">70%</span>    
+                            <div class="skill__item">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__progress" value="70" max="100"></progress>
+                                <span class="skill__value">70%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JQUERY</span>
-                                <progress class="about-us__skill-progress" value="58" max="100"></progress>
-                                <span class="about-us__skill-value">58%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__progress" value="58" max="100"></progress>
+                                <span class="skill__value">58%</span>  
                             </div>
                         </div> 
                     </div>
@@ -257,33 +260,33 @@
                             </p>
                         </div>      
                     </div>
-                    <div class="about-us__addition">
-                        <h4 class="about-us__skills-title title_xs title">Skills</h4>
-                        <div class="about-us__skills">
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">PHOTOSHOP</span>
-                                <progress class="about-us__skill-progress" value="100" max="100"></progress>
-                                <span class="about-us__skill-value">100%</span>    
+                    <div class="about-us__addition skills">
+                        <h4 class="skills__title title_xs title">Skills</h4>
+                        <div class="skills__items">
+                            <div class="skill__item">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__progress" value="100" max="100"></progress>
+                                <span class="skill__value">100%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">ILLUSTRATOR</span>
-                                <progress class="about-us__skill-progress" value="98" max="100"></progress>
-                                <span class="about-us__skill-value">98%</span> 
+                            <div class="skill__item">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__progress" value="98" max="100"></progress>
+                                <span class="skill__value">98%</span> 
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">WORDPRESS</span>
-                                <progress class="about-us__skill-progress" value="67" max="100"></progress>
-                                <span class="about-us__skill-value">67%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__progress" value="67" max="100"></progress>
+                                <span class="skill__value">67%</span>  
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JOOMLA</span>
-                                <progress class="about-us__skill-progress" value="70" max="100"></progress>
-                                <span class="about-us__skill-value">70%</span>    
+                            <div class="skill__item">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__progress" value="70" max="100"></progress>
+                                <span class="skill__value">70%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JQUERY</span>
-                                <progress class="about-us__skill-progress" value="58" max="100"></progress>
-                                <span class="about-us__skill-value">58%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__progress" value="58" max="100"></progress>
+                                <span class="skill__value">58%</span>  
                             </div>
                         </div> 
                     </div>
@@ -306,33 +309,33 @@
                             </p>
                         </div>      
                     </div>
-                    <div class="about-us__addition">
-                        <h4 class="about-us__skills-title title_xs title">Skills</h4>
-                        <div class="about-us__skills">
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">PHOTOSHOP</span>
-                                <progress class="about-us__skill-progress" value="100" max="100"></progress>
-                                <span class="about-us__skill-value">100%</span>    
+                    <div class="about-us__addition skills">
+                        <h4 class="skills__title title_xs title">Skills</h4>
+                        <div class="skills__items">
+                            <div class="skill__item">
+                                <span class="skill__name">PHOTOSHOP</span>
+                                <progress class="skill__progress" value="100" max="100"></progress>
+                                <span class="skill__value">100%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">ILLUSTRATOR</span>
-                                <progress class="about-us__skill-progress" value="98" max="100"></progress>
-                                <span class="about-us__skill-value">98%</span> 
+                            <div class="skill__item">
+                                <span class="skill__name">ILLUSTRATOR</span>
+                                <progress class="skill__progress" value="98" max="100"></progress>
+                                <span class="skill__value">98%</span> 
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">WORDPRESS</span>
-                                <progress class="about-us__skill-progress" value="67" max="100"></progress>
-                                <span class="about-us__skill-value">67%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">WORDPRESS</span>
+                                <progress class="skill__progress" value="67" max="100"></progress>
+                                <span class="skill__value">67%</span>  
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JOOMLA</span>
-                                <progress class="about-us__skill-progress" value="70" max="100"></progress>
-                                <span class="about-us__skill-value">70%</span>    
+                            <div class="skill__item">
+                                <span class="skill__name">JOOMLA</span>
+                                <progress class="skill__progress" value="70" max="100"></progress>
+                                <span class="skill__value">70%</span>    
                             </div>
-                            <div class="about-us__skill">
-                                <span class="about-us__skill-name">JQUERY</span>
-                                <progress class="about-us__skill-progress" value="58" max="100"></progress>
-                                <span class="about-us__skill-value">58%</span>  
+                            <div class="skill__item">
+                                <span class="skill__name">JQUERY</span>
+                                <progress class="skill__progress" value="58" max="100"></progress>
+                                <span class="skill__value">58%</span>  
                             </div>
                         </div> 
                     </div>
@@ -435,17 +438,17 @@
         </div>
         <div class="contact-us__container">
             <div class="main-container">
-                <form class="contact-us__form form" action="#" method="post">
-                    <label class="form__label">
-                        <input class="form__field" placeholder="Your name here" name="name" type="text" >
+                <form class="contact-us__form" action="#" method="post">
+                    <label class="contact-us__label">
+                        <input class="contact-us__field" placeholder="Your name here" name="name" type="text" >
                     </label>
-                    <label class="form__label">
-                        <input class="form__field" placeholder="Email address here" name="email" type="email">             
+                    <label class="contact-us__label">
+                        <input class="contact-us__field" placeholder="Email address here" name="email" type="email">             
                     </label>
-                    <label class="form__label form__textarea">
-                        <textarea class="form__field form__textarea-field"  rows="10"  name="textarea" placeholder="Your message here"></textarea>
+                    <label class="contact-us__label contact-us__textarea">
+                        <textarea class="contact-us__field contact-us__textarea-field"  rows="10"  name="textarea" placeholder="Your message here"></textarea>
                     </label>
-                    <button class="form__button button" type="submit">SEND MESSAGE NOW</button>
+                    <button class="contact-us__button button" type="submit">SEND MESSAGE NOW</button>
                 </form>
             </div>
         </div>

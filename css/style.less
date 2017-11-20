@@ -3,6 +3,24 @@
 @whitecolor: #fff;
 @graycolor: #3d3c3c;
 
+html{
+	font-size: 10px; 
+}
+
+@media screen and (min-width: 700px) and (max-width: 800px){
+	html{
+		font-size:8px;
+	}
+
+}
+
+@media screen and (max-width: 699px){
+	html{
+		font-size:6px;
+	}
+
+}
+
 body{
     margin: 0;
     font-family: Arial, sans-serif;
@@ -45,7 +63,7 @@ p{
 @import "blocks/service.less";
 @import "blocks/portfolio.less";
 @import "blocks/about-us.less";
+@import "blocks/skills.less";
 @import "blocks/latest-posts.less";
 @import "blocks/post.less";
 @import "blocks/contact-us.less";
-@import "blocks/form.less";

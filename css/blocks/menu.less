@@ -1,10 +1,14 @@
 .menu{
 	font-family: oswald;
 }
-
+.menu__list{
+	padding-left: 0;
+	margin-bottom: 0;
+	margin-top: 0;
+}
 .menu__list-item{
 	display: inline-block;
-	font-size: 17px;
+	font-size: 1.7rem;
 	font-weight: bold;
 	color: @graycolor;	
 }
@@ -15,9 +19,40 @@
 
 .menu__link{
 	display: inline-block;
-	padding: 42px 17px;
+	padding: 4.2rem 1.7rem;
 }
 
 .menu__link:hover{
 	color : @whitecolor;
 }
+
+.menu__hamburger{
+	display: none;
+}
+
+.menu__label{
+	cursor: pointer;
+	font-size: 2rem;
+	padding: 4.2rem 1.7rem;
+	display: none;
+}
+
+.menu__label:hover{
+	background-color: @maincolor;
+	color : @whitecolor;
+
+}
+
+ .menu__label:checked ~ .menu__list{
+  }
+
+@media screen and (max-width: 500px) {
+  .menu__list{
+    display: none
+  }
+  .menu__label{
+  	display: block;
+  }
+
+}
+
