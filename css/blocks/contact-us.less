@@ -1,13 +1,10 @@
-.contact-us{
-	padding-top: 26px;
-}
 
 .contact-us__container{
 	background-image: url("../img/city.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-top: 30px;
-	padding-bottom: 85px;
+	padding-top: 3rem;
+	padding-bottom: 8.5rem;
 }
 
 .contact-us__title{
@@ -18,10 +15,11 @@
 .contact-us__label{
 	display: inline-block;
 	width: 48.4%;
-	font-size: 20px;
+	font-size: 2rem;
 	font-family: Arial;
 	vertical-align: top;
 	margin-left: 2.6%;
+	position: relative;
 }
 .contact-us__label:nth-child(odd){
 	margin-left: 0;
@@ -32,26 +30,29 @@
 	font-family: inherit;
 	width: 100%;
 	outline-color: #fd5433;
-	padding: 3.5% 0 3.5% 3.5%;
+	padding: 2rem;
 	border: 1px solid #CAC9C9;
 	box-sizing: border-box;
 }
 
-.contact-us__textarea-field{
-	padding: 1.5% 0 1.5% 1.5%;
-}
-
 .contact-us__textarea{
 	width: 100%;
-	margin-top: 22px;	
+	margin-top: 2.2rem;	
 }
 
 .contact-us__button{
 	width: 100%;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	margin-top: 22px;
-	font-size: 26px;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 2.2rem;
+	font-size: 2.6rem;
+}
+.contact-us__hint{
+	position: absolute;
+    top: 2rem;
+    left: 2rem;
+    cursor: text;
+    color: @maincolor;
 }
 
 @media screen and (max-width: 699px){
@@ -59,7 +60,7 @@
 		display: block;
 		width: 100%;
 		margin-left: 0;
-		margin-top: 20px;
+		margin-top: 10px;
 	}
 	.contact-us__label:first-of-type{
 		margin-top: 0;

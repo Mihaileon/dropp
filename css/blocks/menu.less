@@ -31,22 +31,29 @@
 }
 
 .menu__label{
-	cursor: pointer;
-	font-size: 2rem;
-	padding: 4.2rem 1.7rem;
 	display: none;
+    height: 1.5rem;
+    width: 3rem;
+    position: relative;
+    background-color: transparent;
+    border-bottom: 0.5rem solid;
+    border-top: 0.5rem solid;
+    border-color: @maincolor;
+    cursor: pointer;
 }
 
-.menu__label:hover{
-	background-color: @maincolor;
-	color : @whitecolor;
-
+.menu__label:after{
+	content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    border-top: 0.5rem solid;
+    border-color: @maincolor;
 }
 
- .menu__label:checked ~ .menu__list{
-  }
-
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 560px) {
   .menu__list{
     display: none
   }

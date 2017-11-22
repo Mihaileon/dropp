@@ -13,7 +13,7 @@
             <h1 class="header__logo title">DR<span class="header_symbol">O</span>PP</h1>
             <nav class="menu header__menu">
                 <input id="menu__checkbox" type="checkbox" name="menu" class="menu__hamburger">
-                <label class="menu__label" for="menu__checkbox">Menu</label>
+                <label class="menu__label" for="menu__checkbox"></label>
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a class="link menu__link" href="#home">HOME</a>
@@ -440,13 +440,17 @@
             <div class="main-container">
                 <form class="contact-us__form" action="#" method="post">
                     <label class="contact-us__label">
-                        <input class="contact-us__field" placeholder="Your name here" name="name" type="text" >
+                        <input class="contact-us__field" name="name" type="text" required>
+                        <span class="contact-us__hint">Your name here</span>
                     </label>
                     <label class="contact-us__label">
-                        <input class="contact-us__field" placeholder="Email address here" name="email" type="email">             
+                        <input class="contact-us__field" name="email" type="email" required>
+                        <span class="contact-us__hint">Email address here</span>
                     </label>
                     <label class="contact-us__label contact-us__textarea">
-                        <textarea class="contact-us__field contact-us__textarea-field"  rows="10"  name="textarea" placeholder="Your message here"></textarea>
+                        <textarea class="contact-us__field"  rows="10"  name="textarea"" required>
+                        </textarea>
+                        <span class="contact-us__hint">Your message here</span>
                     </label>
                     <button class="contact-us__button button" type="submit">SEND MESSAGE NOW</button>
                 </form>
