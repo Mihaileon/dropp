@@ -10,18 +10,21 @@
 
 .portfolio__link{
 	width: 16.6%;
-	transition: transform, box-shadow 0.5s ease-in-out;
-}
-
-.portfolio__link:hover{
-	transform: scale(1.1);
-	box-shadow: 0 10px 10px rgba(0,0,0,1);
 }
 
 .portfolio__image{
 	max-width: 100%;
 	width: 100%;
 	display: block;
+}
+@media screen and (min-width: 700px){
+	.portfolio__link{
+	transition: transform, box-shadow 0.5s ease-in-out;
+	}
+	.portfolio__link:hover{
+	transform: scale(1.1);
+	box-shadow: 0 10px 10px rgba(0,0,0,1);
+}
 }
 
 @media screen and (max-width: 699px){

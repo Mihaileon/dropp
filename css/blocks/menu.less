@@ -31,7 +31,7 @@
 }
 
 .menu__label{
-	display: none;
+    display: block;
     height: 1.5rem;
     width: 3rem;
     position: relative;
@@ -53,13 +53,16 @@
     border-color: @maincolor;
 }
 
-@media screen and (max-width: 560px) {
+
+@media screen and (min-width: 700px){
+ .menu__label{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 699px) {
   .menu__list{
     display: none
   }
-  .menu__label{
-  	display: block;
-  }
-
 }
 
