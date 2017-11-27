@@ -13,47 +13,54 @@
 
 .post__time{
 	font-family: oswald;
-	position:relative;
 	font-size: 15px;
 	font-weight: bold;
 	color: #686868;
 }
 
 .post__content{
-	margin-top: 5.2rem;
 	color: #3d3c3c;
 }
 
-@media screen and (min-width: 700px){
+.post__header{
+	position: relative;
+	padding-bottom: 20px;
+}
+
+.post__header:after{
+    content: "";
+    position: absolute;
+    border-bottom: 0.5rem solid @maincolor;
+    bottom: 6px;
+    left: 0;
+    width: 30%;
+}
+
+@media screen and (min-width: 900px){
 	.post__picture{
-	padding-top: 9px;
+		padding-top: 9px;
 	}
 
 	.post__column{
-	display: inline-block;
-	width: 47.5%;
-	margin-left: 4%;
-	vertical-align: top;
-}
-	.post_img{
-	display: block;
+		display: inline-block;
+		width: 47.5%;
+		margin-left: 4%;
+		vertical-align: top;
 	}
-	.post__content{
-	padding-right: 4.3%;
-}
 
-	.post__time:after{
-    content: "";
-    position: absolute;
-    border-bottom: 5px solid @maincolor;
-    left: 0;
-    bottom: -15px;
-    width: 60%;
-}
+	.post_img{
+		display: block;
+	}
+
+	.post__content{
+		margin-top: 2.2rem;
+		padding-right: 4.3%;
+	}
 }
 
 @media screen and (max-width: 699px){
 	.post__content{
 		margin-top: 1rem;
 	}
+	
 }

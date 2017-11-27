@@ -1,11 +1,13 @@
 .menu{
 	font-family: oswald;
 }
+
 .menu__list{
 	padding-left: 0;
 	margin-bottom: 0;
 	margin-top: 0;
 }
+
 .menu__list-item{
 	display: inline-block;
 	font-size: 1.7rem;
@@ -40,6 +42,7 @@
     border-top: 0.5rem solid;
     border-color: @maincolor;
     cursor: pointer;
+    border-radius: 2px;
 }
 
 .menu__label:after{
@@ -55,14 +58,16 @@
 
 
 @media screen and (min-width: 700px){
- .menu__label{
-    display: none;
-  }
+    .menu__label{
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 699px) {
-  .menu__list{
-    display: none
-  }
+    .menu__list{
+        display: none
+    }
+  
 }
 

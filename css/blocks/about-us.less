@@ -17,6 +17,7 @@
 	margin-right: 2.5%;
 	align-items: center;
 }
+
 .about-us__photo:last-of-type{
 	margin-right: 0;
 }
@@ -44,8 +45,12 @@
 .about-us__radio{
 	display:none;
 }
+
 .about-us__inner{
 	display:none
+}
+.about-us__photo ~ .about-us__radio:checked{
+	transform: scale 1.5;
 }
 
 .about-us__radio:checked + .about-us__inner{
@@ -61,7 +66,8 @@
     opacity: 0; }
   100% {
     opacity: 1; } 
-  }
+}
+
 
 .about-us__name{
 	color: @whitecolor;
@@ -90,7 +96,44 @@
 	margin-bottom: 0;
 }
 
+.about-us__links{
+	margin-top: 3rem;
+}
+
+.about-us__social{
+	display: inline-block;
+    vertical-align: top;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    margin-left: 1.5rem;
+}
+.about-us__social:first-of-type{
+	margin-left: 0;
+}
+.about-us__facebook{
+	background-image: url(../img/facebook.svg);
+}
+
+.about-us__google{
+	background-image: url(../img/google.svg);
+}
+
+.about-us__vimeo{
+	background-image: url(../img/vimeo.svg);
+}
+
+.about-us__dribbble{
+	background-image: url(../img/dribbble4.svg);
+}
+
+.about-us__youtube{
+	background-image: url(../img/youtube4.svg);
+}
+
 @media screen and (min-width: 700px){
+
+
 	.about-us__descriprion{
 		display: inline-block;
 		vertical-align: top;
@@ -98,24 +141,31 @@
 		margin-right: 1.6%;
 		box-sizing: border-box;
 	    padding-right: 7%;
-
 	}
+
 	.about-us__addition{
 		vertical-align: top;
 		display: inline-block;
 		width: 48.9%;
-}
+	}
+
 }
 
 @media screen and (max-width: 699px){
 	.about-us__addition{
-		margin-top: 50px;
+		margin-top: 30px;
     }
+
     .about-us__text{
     	margin-top: 2.5rem;
-}
+	}
+
 	.about-us__skills{
 		margin-top: 2.5rem;
+	}
+	
+	.about-us__social{
+		background-size: 3rem;
 	}
 
 }
