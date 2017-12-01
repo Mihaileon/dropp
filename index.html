@@ -6,14 +6,20 @@
     <title>DROPP</title>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/humburgerMenu.js"></script>
 </head>
 <body>
     <header class="header">
         <div class="main-container header__container">
             <h1 class="header__logo title">DR<span class="header_symbol">O</span>PP</h1>
             <nav class="menu header__menu">
-                <input id="menu__checkbox" type="checkbox" name="menu" class="menu__hamburger">
-                <label class="menu__label" for="menu__checkbox"></label>
+                <div class="menu__humburger">
+                    <span class="menu__burger-element"></span>
+                    <span class="menu__burger-element"></span>
+                    <span class="menu__burger-element"></span>
+                    <span class="menu__burger-element"></span>
+                </div>
                 <ul class="menu__list">
                     <li class="menu__list-item">
                         <a class="link menu__link" href="#home">HOME</a>

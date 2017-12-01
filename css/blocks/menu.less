@@ -9,65 +9,105 @@
 }
 
 .menu__list-item{
-	display: inline-block;
 	font-size: 1.7rem;
 	font-weight: bold;
-	color: @graycolor;	
 }
 
-.menu__list-item:hover{
-	background-color: @maincolor;
+.menu__humburger{
+	width: 30px;
+	height: 26px;
+	position: relative;
+	cursor: pointer;
 }
 
-.menu__link{
+.menu__burger-element{
+	position: absolute;
+	height: 4px;
+	width: 100%;
+	background-color: #fd5433;
+	border-radius: 4px;
+	left: 0;
+	transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+}
+
+.menu__burger-element:nth-child(1){
+	top:0;
+}
+
+.menu__burger-element:nth-child(2),.menu__burger-element:nth-child(3){
+	top:13px;
+}
+
+.menu__burger-element:nth-child(4){
+	top: 26px;
+}
+
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(1){
+	opacity: 0;
+}
+
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(2){
+	transform: rotate(45deg);
+}
+
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(3){
+	transform: rotate(-45deg);
+}
+
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(4){
+	opacity: 0;
+}
+
+.menu.menu_active .menu__list{
+  display: block;
+}
+
+@media screen and (min-width: 700px) {
+	.menu__humburger{
+    	display: none;
+	}
+
+	.menu__list-item{
 	display: inline-block;
-	padding: 4.2rem 1.7rem;
-}
+	color: @graycolor;	
+	}
 
-.menu__link:hover{
+	.menu__list-item:hover{
+	background-color: @maincolor;
+	}
+
+	.menu__link{
+		display: inline-block;
+		padding: 4.2rem 1.7rem;
+	}
+
+	.menu__link:hover{
 	color : @whitecolor;
-}
-
-.menu__hamburger{
-	display: none;
-}
-
-.menu__label{
-    display: block;
-    height: 1.5rem;
-    width: 3rem;
-    position: relative;
-    background-color: transparent;
-    border-bottom: 0.5rem solid;
-    border-top: 0.5rem solid;
-    border-color: @maincolor;
-    cursor: pointer;
-    border-radius: 2px;
-}
-
-.menu__label:after{
-	content: "";
-    display: block;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    width: 100%;
-    border-top: 0.5rem solid;
-    border-color: @maincolor;
-}
-
-
-@media screen and (min-width: 700px){
-    .menu__label{
-        display: none;
-    }
-
+	}
 }
 
 @media screen and (max-width: 699px) {
     .menu__list{
-        display: none
+        display: none;
+        z-index: 1000;
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        width: 100%;
     }
-  
+    .menu__list-item{
+    	display: block;
+    	background-color: @whitecolor;
+    	text-align: center;
+    	border-top: 1px solid @graycolor;
+    }
+    .menu__list-item:first-of-type{
+    	border-top: 0;
+    }
+    .menu__link{
+    	padding: 3rem 0;
+    	display: block;
+    	color: @graycolor;
+    }
 }
 

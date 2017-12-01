@@ -103,6 +103,9 @@ p {
     z-index: 1;
     position: fixed;
   }
+  .header__logo {
+    font-size: 3rem;
+  }
 }
 .header__container {
   display: -webkit-box;
@@ -114,6 +117,12 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 699px) {
+  .header__container {
+    height: 10vh;
+  }
 }
 .header__logo {
   color: #474444;
@@ -135,55 +144,95 @@ p {
   margin-top: 0;
 }
 .menu__list-item {
-  display: inline-block;
   font-size: 1.7rem;
   font-weight: bold;
-  color: #3d3c3c;
 }
-.menu__list-item:hover {
-  background-color: #fd5433;
-}
-.menu__link {
-  display: inline-block;
-  padding: 4.2rem 1.7rem;
-}
-.menu__link:hover {
-  color: #fff;
-}
-.menu__hamburger {
-  display: none;
-}
-.menu__label {
-  display: block;
-  height: 1.5rem;
-  width: 3rem;
+.menu__humburger {
+  width: 30px;
+  height: 26px;
   position: relative;
-  background-color: transparent;
-  border-bottom: 0.5rem solid;
-  border-top: 0.5rem solid;
-  border-color: #fd5433;
   cursor: pointer;
-  border-radius: 2px;
 }
-.menu__label:after {
-  content: "";
-  display: block;
+.menu__burger-element {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
+  height: 4px;
   width: 100%;
-  border-top: 0.5rem solid;
-  border-color: #fd5433;
+  background-color: #fd5433;
+  border-radius: 4px;
+  left: 0;
+  -webkit-transition: opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out, -webkit-transform 0.25s ease-in-out;
+}
+.menu__burger-element:nth-child(1) {
+  top: 0;
+}
+.menu__burger-element:nth-child(2),
+.menu__burger-element:nth-child(3) {
+  top: 13px;
+}
+.menu__burger-element:nth-child(4) {
+  top: 26px;
+}
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(1) {
+  opacity: 0;
+}
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.menu.menu_active .menu__humburger .menu__burger-element:nth-child(4) {
+  opacity: 0;
+}
+.menu.menu_active .menu__list {
+  display: block;
 }
 @media screen and (min-width: 700px) {
-  .menu__label {
+  .menu__humburger {
     display: none;
+  }
+  .menu__list-item {
+    display: inline-block;
+    color: #3d3c3c;
+  }
+  .menu__list-item:hover {
+    background-color: #fd5433;
+  }
+  .menu__link {
+    display: inline-block;
+    padding: 4.2rem 1.7rem;
+  }
+  .menu__link:hover {
+    color: #fff;
   }
 }
 @media screen and (max-width: 699px) {
   .menu__list {
     display: none;
+    z-index: 1000;
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    width: 100%;
+  }
+  .menu__list-item {
+    display: block;
+    background-color: #fff;
+    text-align: center;
+    border-top: 1px solid #3d3c3c;
+  }
+  .menu__list-item:first-of-type {
+    border-top: 0;
+  }
+  .menu__link {
+    padding: 3rem 0;
+    display: block;
+    color: #3d3c3c;
   }
 }
 .section {
@@ -214,7 +263,7 @@ p {
 }
 @media screen and (max-width: 699px) {
   .home {
-    height: 100vh;
+    height: 90vh;
   }
   .home__slogan {
     font-size: 9rem;
@@ -657,6 +706,7 @@ p {
   background-repeat: no-repeat;
   padding-top: 3rem;
   padding-bottom: 2rem;
+  background-color: #000;
 }
 .contact-us__title {
   color: #fd5433;
@@ -671,14 +721,16 @@ p {
   margin-left: 0;
 }
 .contact-us__field {
-  font-size: inherit;
-  font-family: inherit;
+  font-size: 2rem;
   width: 100%;
   outline-color: #fd5433;
   padding: 2rem;
   border: 1px solid #CAC9C9;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 .contact-us__copyright {
   margin-top: 8.5rem;
