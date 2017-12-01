@@ -1,0 +1,96 @@
+
+.contact-us__container{
+	background-image: url("../img/city.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+	background-color: #000;
+}
+
+.contact-us__title{
+	color: @maincolor;
+    text-align: center;
+}
+
+.contact-us__label{
+	font-size: 2rem;
+	font-family: Arial;
+	position: relative;
+}
+
+.contact-us__label:nth-child(odd){
+	margin-left: 0;
+}
+
+.contact-us__field{
+	font-size: 2rem;
+	width: 100%;
+	outline-color: #fd5433;
+	padding: 2rem;
+	border: 1px solid #CAC9C9;
+	box-sizing: border-box;
+	border-radius: 0;
+	box-shadow: none;
+}
+.contact-us__copyright{
+	margin-top: 8.5rem;
+	border-top: 1px solid @whitecolor;
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.contact-us__text{
+	font-size: 1.8rem;
+    color: @whitecolor;
+}
+
+.contact-us__text_bold{
+	font-weight: bold;
+}
+
+@media screen and (min-width: 700px){
+	.contact-us__label{
+		display: inline-block;
+		width: 48.4%;
+		vertical-align: top;
+		margin-left: 2.6%;
+	}
+
+	.contact-us__label:first-of-type{
+		margin-top: 0;
+	}
+
+}
+
+.contact-us__textarea{
+	width: 100%;
+	margin-top: 2.2rem;	
+}
+
+.contact-us__button{
+	width: 100%;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-top: 2.2rem;
+	font-size: 2.6rem;
+}
+
+.contact-us__hint{
+	position: absolute;
+    top: 2rem;
+    left: 2rem;
+    cursor: text;
+    color: @maincolor;
+}
+
+@media screen and (max-width: 699px){
+	.contact-us__label{
+		display: block;
+		margin-top: 20px;
+	}
+	
+    .contact-us__label:first-of-type{
+    	margin-top: 0;
+    }
+}

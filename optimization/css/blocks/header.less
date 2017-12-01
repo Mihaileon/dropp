@@ -1,0 +1,39 @@
+.header{
+	background-color: #fff;
+	width: 100%;
+}
+
+@media screen and (min-width: 700px){
+	.header{
+		z-index: 1;
+		position: fixed;
+	}
+
+	.header__logo{
+		font-size: 3rem;
+	}
+}
+.header__container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+}
+@media screen and (max-width: 699px){
+	.header__container{
+		height: 10vh;		
+	}
+}
+.header__logo{
+	color: #474444;
+	font-size: 7rem;
+	font-weight: normal;
+}
+
+.header_symbol{
+	color: #fd5433;
+}
+
+.header__menu{	
+	max-width: 900px;
+}

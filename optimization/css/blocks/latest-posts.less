@@ -1,0 +1,46 @@
+.latest-posts{
+	border-bottom: 1px solid #828282;
+	padding-bottom: 9.2rem;
+}
+
+.latest-posts__title{
+	color: @maincolor;
+    text-align: center;
+}
+
+.latest-posts__content{
+	margin-top: 9rem;
+}
+
+@media screen and (min-width: 700px){
+
+	.latest-posts__posts{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.latest-posts__post{
+		width: 48.5%;
+		margin-top: 75px;
+		margin-right: 3%;
+	}
+
+	.latest-posts__post:nth-child(2n+2){
+		margin-right: 0;
+	}
+
+	.latest-posts__post:nth-child(-n+2){
+		margin-top: 0;
+	}
+
+}
+@media screen and (max-width: 699px){
+	.latest-posts__post{
+		margin-top: 60px;
+	}
+	
+	.latest-posts__post:first-of-type{
+		margin-top: 0;
+	}
+
+}
