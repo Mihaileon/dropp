@@ -121,7 +121,7 @@ p {
 }
 @media screen and (max-width: 699px) {
   .header__container {
-    height: 10vh;
+    height: 16vh;
   }
 }
 .header__logo {
@@ -263,7 +263,7 @@ p {
 }
 @media screen and (max-width: 699px) {
   .home {
-    height: 90vh;
+    height: 84vh;
   }
   .home__slogan {
     font-size: 9rem;
